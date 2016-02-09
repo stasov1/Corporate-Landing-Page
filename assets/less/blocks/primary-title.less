@@ -1,0 +1,39 @@
+.primary-title {
+  font-family: @font-exo;
+  .font-size(@font-xl);
+  font-weight: 500;
+
+  &__sup {
+    font-size: @font-m;
+    color: @red;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    color: @black-light;
+  }
+
+  &__content_red {
+    color: @red;
+  }
+
+  &_centered {
+    text-align: center;
+  }
+
+  &__content_white {
+    color: @white;
+  }
+
+  &_no-top-margin {
+    margin-top: 0;
+  }
+
+  @media (max-width: @mobile-small) {
+    .font-size(@font-l);
+
+    &__sup {
+      font-size: @font-s;
+    }
+  }
+}

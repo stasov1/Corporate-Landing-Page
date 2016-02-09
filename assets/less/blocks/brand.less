@@ -1,0 +1,44 @@
+.brand {
+  margin: 30px 0 20px;
+
+  &__link {
+    display: inline-block;
+    margin-left: -4px;
+    .width(120px, 1140px);
+    height: 66px;
+    .margin(right, 30px, 1140px);
+    background: url("img/spritesheet.png") no-repeat;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &_centered {
+    text-align: center;
+  }
+
+  &__link_1 {
+    background-position: -10px -97px;
+  }
+
+  &__link_2 {
+    background-position: -10px -182px;
+  }
+
+  &__link_3 {
+    background-position: -160px -97px;
+  }
+
+  &__link_4 {
+    background-position: -140px -202px;
+  }
+
+  &__link_5 {
+    background-position: -271px -10px;
+  }
+
+  @media (max-width: @desktop-small) {
+    display: none;
+  }
+}

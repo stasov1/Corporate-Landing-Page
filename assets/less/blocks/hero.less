@@ -1,0 +1,30 @@
+.hero {
+  font-family: @font-exo;
+
+  &__title {
+    margin-top: 0;
+    color: @black-light;
+    .font-size(@font-xxl - 5);
+    font-weight: 300;
+  }
+
+  &__play {
+    margin-bottom: 30px;
+  }
+
+  &__mark {
+    color: @gray-dark;
+  }
+
+  @media (max-width: @mobile) {
+    &__title {
+      .font-size(@font-xl);
+    }
+  }
+
+  @media (max-width: @mobile-small) {
+    &__title {
+      .font-size(@font-l);
+    }
+  }
+}

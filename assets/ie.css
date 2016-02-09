@@ -1,0 +1,24 @@
+.label-input {
+  display: inline-block;
+  color: #ececec;
+  cursor: text;
+}
+
+.label-input_dark {
+  color: #4e4e5e;
+}
+
+.subscr-form input[type="text"],
+.subscr-form input[type="email"],
+.subscr-form input[type="password"] {
+  padding: 9px 20px 8px;
+}
+
+.contact-form input[type="email"],
+.contact-form input[type="text"] {
+  padding: 17px 20px;
+}
+
+.text-label {
+  top: -40px;
+}

@@ -1,0 +1,22 @@
+.text-label {
+  position: absolute;
+  top: -55px;
+  left: 40px;
+  font-weight: 300;
+  color: @white;
+  .font-size(@font-m);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    top: 5px;
+    width: 56px;
+    height: 41px;
+    background: url("img/arrow.png") no-repeat center center;
+  }
+
+  @media (max-width: @desktop-small) {
+    display: none;
+  }
+}

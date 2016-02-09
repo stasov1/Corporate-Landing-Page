@@ -1,0 +1,47 @@
+.social-list {
+  margin: 20px 0;
+  padding: 0;
+  list-style-type: none;
+  .font-size(@font-l);
+
+  &_centered {
+    text-align: center;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  &__link_drib {
+    color: @dribbble;
+
+    &:hover {
+      color: darken(@dribbble, 20%);
+    }
+  }
+
+  &__link_fb {
+    color: @facebook;
+
+    &:hover {
+      color: darken(@facebook, 20%);
+    }
+  }
+
+  &__link_tw {
+    color: @twitter;
+
+    &:hover {
+      color: darken(@twitter, 20%);
+    }
+  }
+
+  &__link_gplus {
+    color: @gplus;
+
+    &:hover {
+      color: darken(@gplus, 20%);
+    }
+  }
+}

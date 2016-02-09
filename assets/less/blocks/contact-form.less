@@ -1,0 +1,42 @@
+.contact-form {
+  input[type="email"],
+  input[type="text"] {
+    padding: 15px 25px;
+    background-color: @gray-very-light;
+    border: 1px solid @bordered-white-dark;
+    border-radius: 3px 0 0 3px;
+    .font-size(@font-m);
+    outline: none;
+  }
+
+  input[type="email"],
+  input[type="text"],
+  button {
+    vertical-align: middle;
+  }
+
+  button {
+    display: inline-block;
+    margin-left: -6px;
+    box-shadow: 0 3px 3px -1px rgba(0, 0, 0, .4);
+    outline: none;
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+
+  @media (max-width: @mobile-small) {
+    input[type="email"],
+    input[type="text"] {
+      width: 100%;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}

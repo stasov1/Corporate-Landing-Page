@@ -1,0 +1,36 @@
+.about {
+  padding: 80px 0 60px;
+  background: url("img/bg-middle.jpg") repeat-y center top;
+  background-attachment: fixed;
+  color: @white;
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__item_centered {
+    text-align: center;
+  }
+
+  &__thumb {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    background-color: @black-special-temp;
+  }
+
+  &__title {
+    line-height: 1.2;
+    .font-size(@font-l);
+    font-weight: 500;
+  }
+
+  &__title-sub {
+    color: @red;
+    font-size: (@font-m - 1);
+  }
+
+  &__txt-content {
+    color: @white-dark !important;
+  }
+}

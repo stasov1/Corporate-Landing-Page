@@ -1,0 +1,51 @@
+.btn {
+  display: inline-block;
+  padding: 7px 20px;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  .font-size(@font-m);
+  font-family: @font-exo;
+  line-height: 1.2;
+  letter-spacing: .2em;
+  cursor: pointer;
+  transition: background-color .3s ease;
+
+  &_primary-red {
+    background-color: @red;
+    color: @white;
+
+    &:hover {
+      background-color: darken(@red, 10%);
+    }
+  }
+
+  &_primary-blue-fadded {
+    background-color: @blue-fadded;
+    color: @white;
+
+    &:hover {
+      background-color: darken(@blue-fadded, 10%);
+    }
+  }
+
+  &_circle {
+    padding: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  &_full-width {
+    width: 100%;
+  }
+
+  &_big {
+    padding: 17px 17px;
+    .font-size(@font-m + 1);
+  }
+}

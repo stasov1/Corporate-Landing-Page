@@ -1,0 +1,57 @@
+.feature {
+  padding: 100px 0;
+  overflow: hidden;
+  background: url("img/pen.png") no-repeat 0 -20px,
+              url("img/headphone.png") no-repeat 90% -10px,
+              url("img/cup.png") no-repeat 90% 135%,
+              @white-dark;
+
+  &__content {
+    .width(750px, 1140px);
+    margin: 0 auto;
+  }
+
+  &_custom-padding {
+    padding: 100px 0 0;
+  }
+
+  &_centered {
+    text-align: center;
+  }
+
+  &_bg-no {
+    background: @white-dark;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    .font-size(@font-l);
+    font-weight: 500;
+  }
+
+  &__thumb {
+    display: inline-block;
+    width: 67px;
+    height: 67px;
+    background: url("img/spritesheet.png") no-repeat;
+  }
+
+  &__thumb_gallery {
+    background-position: -10px -10px;
+  }
+
+  &__thumb_plane {
+    background-position: -97px -10px;
+  }
+
+  &__thumb_lamp {
+    background-position: -184px -10px;
+  }
+
+  @media (max-width: @mobile) {
+    background: @white-dark;
+  }
+}

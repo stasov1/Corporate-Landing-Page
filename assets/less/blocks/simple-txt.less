@@ -1,0 +1,19 @@
+.simple-txt {
+  color: @gray-dark;
+  font-family: @font-exo;
+  font-weight: 500;
+  .font-size(@font-m);
+  line-height: 1.5;
+
+  &_italic {
+    font-style: italic;
+  }
+
+  &_centered {
+    text-align: center;
+  }
+
+  &_small {
+    .font-size(@font-s);
+  }
+}
